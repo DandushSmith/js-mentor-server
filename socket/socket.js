@@ -4,8 +4,7 @@ const { CodeBlock } = require("../config/mongo");
 const connectToSocket = (server) => {
   const io = socketIO(server, {
     cors: {
-      //TODO: check cors
-      origin: [process.env.CLIENT_URL],
+      origin: "*",
     },
   });
 

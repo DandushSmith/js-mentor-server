@@ -4,7 +4,8 @@ const codeBlocks = [
     code: `const numbers = [1, 2, 3, 4, 5];
 numbers.push(6);
 const doubledNumbers = numbers.map(num => num * 2);
-console.log(doubledNumbers);`,
+console.log(doubledNumbers);
+// Output:`,
     solution: `// Output: [2, 4, 6, 8, 10, 12]`,
   },
   {
@@ -12,14 +13,16 @@ console.log(doubledNumbers);`,
     code: `const firstName = 'John';
 const lastName = 'Doe';
 const fullName = firstName + ' ' + lastName;
-console.log(fullName);`,
+console.log(fullName);
+// Output:`,
     solution: `// Output: "John Doe"`,
   },
   {
     title: "Object Destructuring",
     code: `const person = { name: 'Alice', age: 25, city: 'Wonderland' };
 const { name, age } = person;
-console.log(name, age);`,
+console.log(name, age);
+// Output:`,
     solution: `// Output: "Alice 25"`,
   },
   {
@@ -33,20 +36,23 @@ console.log(name, age);`,
 }
 
 const greet = outerFunction();
-greet('Bob');`,
+greet('Bob');
+// Output:`,
     solution: `// Output: "Hello, Bob"`,
   },
   {
     title: "Map Function",
     code: `const numbers = [1, 2, 3, 4, 5];
 const squaredNumbers = numbers.map(num => num ** 2);
-console.log(squaredNumbers);`,
+console.log(squaredNumbers);
+// Output:`,
     solution: `// Output: [1, 4, 9, 16, 25]`,
   },
   {
     title: "Set Usage",
     code: `const uniqueNumbers = new Set([1, 2, 3, 3, 4, 5]);
-console.log([...uniqueNumbers]);`,
+console.log([...uniqueNumbers]);
+// Output:`,
     solution: `// Output: [1, 2, 3, 4, 5]`,
   },
   {
@@ -55,14 +61,16 @@ console.log([...uniqueNumbers]);`,
   const response = await fetch('https://api.example.com/data');
   const data = await response.json();
   console.log(data);
-}`,
+}
+// Output:`,
     solution: `// Assumes valid API response`,
   },
   {
     title: "Event Handling",
     code: `document.getElementById('myButton').addEventListener('click', function() {
   alert('Button clicked!');
-});`,
+});
+// Output:`,
     solution: `// Shows alert on button click`,
   },
   {
@@ -75,7 +83,8 @@ console.log([...uniqueNumbers]);`,
   });
 };
 
-fetchData().then(data => console.log(data));`,
+fetchData().then(data => console.log(data));
+// Output:`,
     solution: `// Output: "Data fetched successfully"`,
   },
   {
@@ -91,7 +100,8 @@ fetchData().then(data => console.log(data));`,
 }
 
 const cat = new Animal('Whiskers');
-cat.makeSound();`,
+cat.makeSound();
+// Output:`,
     solution: `// Output: "Generic animal sound"`,
   },
 ];
