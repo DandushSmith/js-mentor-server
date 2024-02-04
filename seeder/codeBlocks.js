@@ -16,10 +16,7 @@ const initCodeBlockData = async () => {
 };
 
 const run = async () => {
-  // connect to mongo
-  // initCodeBlockData
-
-  console.log("in run");
+  await initCodeBlockData();
 };
 
 run();

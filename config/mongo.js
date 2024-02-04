@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const codeBlockSchema = require("../schema/codeBlock");
-const codeBlocks = require("../utils/codeBlockList");
 require("dotenv").config({
   path: `${__dirname}/.env`,
 });
@@ -18,19 +17,4 @@ const connectToMongo = async () => {
   }
 };
 
-const initCodeBlockData = async () => {
-  try {
-    const count = await CodeBlock.countDocuments();
-    if (count === 0) {
-      await CodeBlock.insertMany(codeBlocks);
-      console.log('Initial code blocks inserted into the database.');
-    } else {
-      console.log('Code blocks already exist in the database. Skipping initialization.');
-    }
-  } catch (error) {
-    console.error("Error inserting code blocks:", error);
-    process.exit(1); 
-  }
-};
-
-module.exports = {connectToMongo, initCodeBlockData, CodeBlock};
+module.exports = { connectToMongo, CodeBlock };
