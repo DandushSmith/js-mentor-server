@@ -1,3 +1,6 @@
+const codeBlocks = require("../utils/codeBlockList");
+const { CodeBlock } = require("../config/mongo");
+
 const initCodeBlockData = async () => {
   try {
     const count = await CodeBlock.countDocuments();
